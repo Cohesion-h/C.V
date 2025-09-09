@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamad F. Alotaibi - Strategic Innovation Architect</title>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono:wght@400&family=Share+Tech:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -28,7 +29,7 @@
 
         /* Liquid Glass Card Effect */
         .glass-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.05  );
             backdrop-filter: blur(20px);
             border: 1px solid rgba(39, 98, 212, 0.2);
             border-radius: 20px;
@@ -230,6 +231,15 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .work-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(39, 98, 212, 0.2);
         }
 
         .work-card::before {
@@ -264,6 +274,10 @@
             color: #4a90e2;
             font-size: 0.9rem;
             margin-bottom: 10px;
+        }
+        
+        .work-card p {
+            flex-grow: 1;
         }
 
         /* CTA Section */
@@ -301,6 +315,46 @@
         .cta-button.secondary:hover {
             background: rgba(39, 98, 212, 0.1);
         }
+        
+        /* Contact Info & ORCID */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #4a90e2;
+        }
+
+        .contact-info img {
+            width: 1em;
+            vertical-align: middle;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(39, 98, 212, 0.2);
+            color: #b0b0b0;
+            font-family: 'Share Tech Mono', monospace;
+        }
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -308,6 +362,7 @@
             .nav { position: relative; top: 0; right: 0; justify-content: center; margin-bottom: 20px; }
             .skills-grid, .work-grid { grid-template-columns: 1fr; }
             .glass-card { padding: 20px; margin: 20px 0; }
+            .cta-section { padding: 40px 0; }
         }
 
         /* Scroll Animations */
@@ -354,6 +409,14 @@
             <p>My unique value proposition lies in combining deep emotional intelligence with technical sophistication and cultural sensitivity. In an era where organizations recognize that EQ matters more than IQ, I offer the rare combination of both, enhanced by practical experience in designing systems that serve multiple stakeholders simultaneously.</p>
 
             <p>Having authored comprehensive works on consciousness, technology, and human development, I bring both theoretical depth and practical implementation experience to strategic partnerships. My approach integrates Islamic wisdom with quantum physics principles and modern psychology, creating frameworks that honor cultural authenticity while embracing technological advancement.</p>
+            
+            <!-- ORCID iD and Contact Info -->
+            <div class="contact-info">
+                <a href="https://orcid.org/0009-0001-8933-6234" target="_blank" rel="me noopener noreferrer">
+                    <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD icon"/>
+                    https://orcid.org/0009-0001-8933-6234
+                </a>
+            </div>
         </section>
 
         <!-- Core Skills Section -->
@@ -369,7 +432,7 @@
 
                 <div class="skill-item">
                     <div class="skill-title">AI Collaboration</div>
-                    <p>Cognitive Intelligence Recognition (CIR) methodology for optimizing human-AI partnerships and enhancing creative output</p>
+                    <p>Cognitive Intelligence Recognition (CIR  ) methodology for optimizing human-AI partnerships and enhancing creative output</p>
                 </div>
 
                 <div class="skill-item">
@@ -400,6 +463,15 @@
             <p style="margin-bottom: 30px;">Concrete achievements demonstrating the practical application of strategic thinking:</p>
             
             <div class="work-grid">
+                <!-- NEW BOOK CARD -->
+                <div class="work-card">
+                    <img src="https://i.ibb.co/bFjW7B1/case-file-001.jpg" alt="Case File 001 Cover Image">
+                    <div class="work-title">Case File 001: The Lost Civilizations Cycle</div>
+                    <div class="work-meta">Major Investigative Work • Co-authored with Manus AI</div>
+                    <p>An investigation into a pattern of technological rise and catastrophic collapse that predates known history, analyzing evidence of an advanced pre-Flood civilization and its implications for the modern era.</p>
+                    <a href="https://docs.google.com/document/d/1Xy_2Jc81Jp9b1-M3_x_g-Z5J_v_y_c_z/edit?usp=sharing&ouid=109859933675541159632&rtpof=true&sd=true" class="cta-button secondary" target="_blank" style="margin-top: 15px; display: inline-block;">Access Document</a>
+                </div>
+
                 <div class="work-card">
                     <div class="work-title">The Quantum Compass Framework</div>
                     <div class="work-meta">49-page comprehensive work • Published 2024</div>
@@ -445,7 +517,7 @@
         <section id="achievements" class="glass-card fade-in">
             <h2>Key Achievements & Milestones</h2>
             <ul class="achievement-list">
-                <li><strong>Emotional Intelligence Certification</strong> - Misk Hub (2024) - Recognized expertise in EQ methodologies and applications</li>
+                <li><strong>Emotional Intelligence Certification</strong> - Misk Hub (2024  ) - Recognized expertise in EQ methodologies and applications</li>
                 <li><strong>Academic Publication</strong> - "Toward Mutual Recognition: Human-AI Consciousness Research" - Establishing new frameworks for AI collaboration</li>
                 <li><strong>Comprehensive Framework Development</strong> - The Quantum Compass methodology successfully integrating multiple disciplines</li>
                 <li><strong>Technical Platform Architecture</strong> - Complete design and business model for Tarabot innovation platform</li>
@@ -508,16 +580,22 @@
             <div class="cta-section">
                 <h3>Ready for Strategic Collaboration</h3>
                 <p>The future belongs to organizations that understand the strategic value of emotional intelligence combined with technical sophistication.</p>
-                <button class="cta-button">Schedule Strategic Consultation</button>
-                <button class="cta-button secondary">Request Detailed Proposal</button>
+                <a href="mailto:hmdfalotaibi@gmail.com" class="cta-button"><i class="fas fa-envelope"></i> Email Me</a>
+                <a href="tel:0096551179990" class="cta-button secondary"><i class="fas fa-phone"></i> Call Me</a>
             </div>
         </section>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; Cohesion Holdings 2025 Hamad Alotaibi
+    </footer>
 
     <script>
         // Animated Background
         function createFloatingElements() {
             const bgAnimation = document.getElementById('bgAnimation');
+            if (!bgAnimation) return;
             for (let i = 0; i < 50; i++) {
                 const element = document.createElement('div');
                 element.className = 'floating-element';
@@ -564,4 +642,3 @@
     </script>
 </body>
 </html>
-
